@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/window.css">
+    <title>Blue Window</title>
+</head>
+<body style="background-color:#b6a888;">
+    <div>
+      <img src="./images/bluewindow/LEFT.png" class="display left" alt="" />
+      <img src="./images/bluewindow/RIGHT.png" class="display right" alt="" />
+      <img src="./images/bluewindow/BOTTOM.png" class="display bottom" alt="" />
+      <img src="./images/bluewindow/BOTTOMLEFT.png" class="display bottomleft" alt="" />
+      <img src="./images/bluewindow/BOTTOMRIGHT.png" class="display bottomright" alt="" />
+      <img src="./images/bluewindow/TOP.png" class="display top" alt="" />
+      <img src="./images/bluewindow/TOPLEFT.png" class="display topleft" alt="" />
+      <img src="./images/bluewindow/TOPRIGHT.png" class="display topright" alt="" />
+      <p class="press-start-2p-regular display" id="title_text">placeholder</p>
+      <iframe src="placeholder" id="innerframe" ></iframe> 
+    </div>
+    <script type="text/javascript">
+      let params = new URLSearchParams(location.search);
+      document.getElementById("title_text").innerHTML = params.get('title')
+      document.getElementById("innerframe").src = params.get('page')
+    </script>
+</html>
