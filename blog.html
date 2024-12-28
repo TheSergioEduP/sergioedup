@@ -42,16 +42,37 @@
         <form action="javascript:setBlogPage()" class="flex-item">
             <label for="pagenum">Select Post:</label>
             <input type="number" value="1" id="pagenum" name="quantity" min="1" max="1">
+            <inline id="page_qtty">of 1</inline>
             <input type="submit" value="Go">
+            <inline>Share link: 
+                <input readonly="" id="share_link" value='' style="width: 200px;">
+            </inline>
         </form>
 
         <iframe src="html/putthejsinbrowser.html" id="blogframe" ></iframe>
     </div>
     <script type="text/javascript">
+        //UPDATE POST COUNT AFTER EVERY NEW POST
+        let postcount = 2;
+        let params = new URLSearchParams(location.search);
+
         function setBlogPage(){
             document.getElementById("blogframe").src = "blog/" + document.getElementById('pagenum').value + ".html"
+            document.getElementById("share_link").value = "https://sergioedup.com/?b=" + document.getElementById('pagenum').value;
         }
-        document.getElementById("blogframe").src = "blog/" + document.getElementById('pagenum').value + ".html"
+        
+        document.getElementById("pagenum").max = postcount;
+        document.getElementById("pagenum").value = postcount;
+        document.getElementById("pagenum").value = postcount;
+        document.getElementById("page_qtty").innerHTML = "of " + postcount;
+
+        if(params.has('b') && params.get('b') <= postcount && params.get('b') > 0){
+            document.getElementById("blogframe").src = "blog/" + params.get('b') + ".html";
+            document.getElementById("share_link").value = "https://sergioedup.com/?b=" + params.get('b');
+        }else{
+            document.getElementById("blogframe").src = "blog/" + document.getElementById('pagenum').value + ".html";
+            document.getElementById("share_link").value = "https://sergioedup.com/?b=" + document.getElementById('pagenum').value;
+        }
     </script>
 </body>
 </html>

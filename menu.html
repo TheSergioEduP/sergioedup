@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-    <link rel="manifest" href="./site.webmanifest">
     <style>
         * {
             box-sizing: border-box;
+        }
+
+        .menu-item:hover{
+            filter: hue-rotate(90deg);
+        }
+
+        .menu-item:active{
+            filter: hue-rotate(180deg);
         }
         
         .container {
@@ -29,10 +33,32 @@
 </head>
 <body>
 	<div class="container">
-		<p class="flex-element"><a href="./bluewindow.html?title=Home&page=home.html" target="content_frame">Home</a></p>
-		<p class="flex-element"><a href="./bluewindow.html?title=Blog&page=blog.html" target="content_frame">Blog</a></p>
-		<p class="flex-element"><a href="./bluewindow.html?title=About%20and%20Contacts&page=html/about.html" target="content_frame">About And Contact</a></p>
-		<p class="flex-element"><a href="./bluewindow.html?title=About&page=html/todo.html" target="content_frame">ToDo</a></p>
+		<p class="flex-element">
+            <a href="./bluewindow.html?title=Home&page=home.html" target="content_frame"><img class="menu-item" src="images/png/btn_home.png" alt="Home"></a>
+        </p>
+		<p class="flex-element">
+            <a href="./bluewindow.html?title=Blog&page=blog.html" target="content_frame"><img class="menu-item" src="images/png/btn_blog.png" alt="Blog"></a>
+        </p>
+		<p class="flex-element">
+            <a href="./bluewindow.html?title=About&page=html/about.html" target="content_frame"><img class="menu-item" src="images/png/btn_about.png" alt="About"></a>
+        </p>
+		<p class="flex-element">
+            <a href="./bluewindow.html?title=ToDo&page=html/todo.html" target="content_frame"><img class="menu-item" src="images/png/btn_todo.png" alt="ToDo"></a>
+        </p>
+        <p class="flex-element" style="text-align: center;">
+            <script src="https://silly.possiblyaxolotl.com/ring/webstring.js"></script>
+        </p>
+        <p class="flex-element" style="text-align: center;">
+            <object id="melonland-surf-club" data="https://melonland.net/surf-badge.svg?fill=#383838" type="image/svg+xml" style="width: 100px; height: 100px;"></object>
+        </p>
+        <p class="flex-element" style="text-align: center;">
+            Badge:
+            <a href="https://sergioedup.com/">
+                <img src="./images/png/sep_badge.png" alt="SergioEduP.com 88x31 Badge">
+            </a>
+            <br>
+            <input readonly="" value='<a href="https://sergioedup.com/"><img src="https://sergioedup.com/images/png/sep_badge.png" alt="SergioEduP.com 88x31 Badge"></a>'>
+        </p>
 	</div>
 </body>
 </html>
