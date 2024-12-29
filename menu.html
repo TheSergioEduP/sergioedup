@@ -9,6 +9,10 @@
             box-sizing: border-box;
         }
 
+        .menu-item{
+            image-rendering: pixelated;
+        }
+
         .menu-item:hover{
             filter: hue-rotate(90deg);
         }
@@ -46,19 +50,27 @@
             <a href="./bluewindow.html?title=ToDo&page=html/todo.html" target="content_frame"><img class="menu-item" src="images/png/btn_todo.png" alt="ToDo"></a>
         </p>
         <p class="flex-element" style="text-align: center;">
-            <script src="https://silly.possiblyaxolotl.com/ring/webstring.js"></script>
+            <script src="https://silly.possiblyaxolotl.com/ring/webstring.js" ></script>
         </p>
         <p class="flex-element" style="text-align: center;">
             <object id="melonland-surf-club" data="https://melonland.net/surf-badge.svg?fill=#383838" type="image/svg+xml" style="width: 100px; height: 100px;"></object>
         </p>
         <p class="flex-element" style="text-align: center;">
             Badge:
-            <a href="https://sergioedup.com/">
-                <img src="./images/png/sep_badge.png" alt="SergioEduP.com 88x31 Badge">
-            </a>
+            <img src="./images/png/sep_badge.png" alt="SergioEduP.com 88x31 Badge">
             <br>
             <input readonly="" value='<a href="https://sergioedup.com/"><img src="https://sergioedup.com/images/png/sep_badge.png" alt="SergioEduP.com 88x31 Badge"></a>'>
         </p>
 	</div>
+    <script>
+        //no longer needed but will stay here just in case I need it for something else in the future
+        function fix_silly_links(){
+            var silly = document.getElementById("sillyring");
+            var silly_children = silly.children;
+            for(var i=0; i< silly_children.length; i++){
+                silly_children[i].target = "_top"
+            }
+        }
+    </script>
 </body>
 </html>
