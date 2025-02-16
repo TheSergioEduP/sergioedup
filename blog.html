@@ -47,13 +47,14 @@
             <inline>Share link: 
                 <input readonly="" id="share_link" value='' style="width: 200px;">
             </inline>
+            <a href="./blog/feed.xml" target="_blank"><img  src="images/gif/rss.gif" alt="RSS Feed"></a>
         </form>
 
         <iframe src="html/putthejsinbrowser.html" id="blogframe" ></iframe>
     </div>
     <script type="text/javascript">
         //UPDATE POST COUNT AFTER EVERY NEW POST
-        let postcount = 3;
+        let postcount = 4;
         let params = new URLSearchParams(location.search);
 
         function setBlogPage(){

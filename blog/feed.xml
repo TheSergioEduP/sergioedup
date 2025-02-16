@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+
+<channel>
+  <title>Sergio's Mind Palace</title>
+  <link>https://www.sergioedup.com/?b</link>
+  <atom:link href="https://www.sergioedup.com/blog/feed.xml" rel="self" type="application/rss+xml" />
+  <description>A web blog where I share my thoughts, ideas and projects</description>
+  <item>
+    <title>.4 - Quick list of projects</title>
+    <link>https://www.sergioedup.com/?b=3</link>
+    <guid>https://www.sergioedup.com/?b=3</guid>
+    <description>Challenge end and what comes next</description>
+    <pubDate>Sun, 09 Feb 2025 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>.3 - Un-distractible but anxious</title>
+    <link>https://www.sergioedup.com/?b=3</link>
+    <guid>https://www.sergioedup.com/?b=3</guid>
+    <description>Challenge end and what comes next</description>
+    <pubDate>Sun, 09 Feb 2025 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>.2 - Distraction Free January</title>
+    <link>https://www.sergioedup.com/?b=2</link>
+    <guid>https://www.sergioedup.com/?b=2</guid>
+    <description>Distraction Free January Challenge</description>
+    <pubDate>Mon, 30 Dec 2024 00:00:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>.1 - Hello, welcome and why?</title>
+    <link>https://www.sergioedup.com/?b=1</link>
+    <guid>https://www.sergioedup.com/?b=1</guid>
+    <description>Introduction post</description>
+    <pubDate>Thu, 26 Dec 2024 00:00:00 GMT</pubDate>
+  </item>
+</channel>
+
+</rss> 
