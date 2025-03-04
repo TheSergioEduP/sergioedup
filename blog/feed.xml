@@ -7,6 +7,13 @@
   <atom:link href="https://www.sergioedup.com/blog/feed.xml" rel="self" type="application/rss+xml" />
   <description>A web blog where I share my thoughts, ideas and projects</description>
     <item>
+    <title>.6 - Website rebuild!</title>
+    <link>https://www.sergioedup.com/?b=6</link>
+    <guid>https://www.sergioedup.com/?b=6</guid>
+    <description>CSS border-image and frames</description>
+    <pubDate>Tue, 4 Mar 2025 21:00:00 GMT</pubDate>
+  </item>
+  <item>
     <title>.5 - "Algorithmic Complacency"</title>
     <link>https://www.sergioedup.com/?b=5</link>
     <guid>https://www.sergioedup.com/?b=5</guid>
