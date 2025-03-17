@@ -5,117 +5,255 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sergio's Home</title>
     <link rel="alternate" type="application/rss+xml" title="Sergio's Mind Palace" href="/blog/feed.xml"/>
-    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-    <link rel="manifest" href="./site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="/css/window.css">
+    <link rel="stylesheet" href="/css/main-layout.css">
+    <link rel="me" href="https://mastodon.online/@SergioEduP">
     <style>
-        * {
-            box-sizing: border-box;
-        }
         body {
             image-rendering: pixelated;
             min-height: 100%;
             margin: 0;
             padding: 0;
-            /*background-image: url("./images/jpg/bg_christmas.jpg");*/
-            background-image: url("./images/png/bg.png");
+            background-image: url("/images/png/bg.png");
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
         }
-        .container {
-            display: flex;
-            margin: 0px;
-            flex-wrap: wrap;
-            height: 100vh;
-            align-items: stretch;
+        .badges{
+            image-rendering: pixelated;
         }
-
-        .innerbox{
-            min-height: 100px;
-            width: 100%;
-            height: 100%;
-            padding: 5px;
-            border: none;
-        }
-
-        .main-window {
-            max-width: 900px;
-            margin: auto;
-            display: block;
-        }
-
-        .box-1 {
-            padding: 20px;
-            order: 1;
-            height: calc(100vh - 250px);
-            flex-basis: 400px;
-        }
-
-        .box-2 {
-            padding: 10px;
-            order: 2;
-            width: auto;
-            height: calc(100vh - 250px);
-            flex-grow: 1;
-            flex-shrink: 1;
-        }
-
-        .box-3 {
-            padding: 20px;
-            order: 3;
-            height: 250px;
-            flex-basis: 100%;
-        }
-        @media only screen and (max-width: 799px),
-                    screen and (max-height: 599px) {
-            .container{
-                height: auto;
-            }
-            .box-1 {
-                order: 1;
-                flex-basis: 100%;
-                height: 800px;
-            }
-            .box-2 {
-                order: 2;
-                flex-basis: 100%;
-                height: 1000px;
-            }
-            .box-3 {
-                order: 3;
-                flex-basis: 100%;
-                height: 300px;
-            }
-            .innerbox{
-                width: 100%;
-                height: 100%;
-                padding: 5px;
-            }
+        .badges:hover{
+            transform: scale(1.5);
+            transition: .5s;
         }
     </style>
 </head>
 <body>
-	<div class="container">
+	<div class="main-container">
 		<div class="box-1">
-            <iframe class="innerbox" title="Menu" name="sidebar_frame" src="./graywindow.html?title=Menu&page=menu.html"></iframe> 
+            <div class="gray-window window-borders innerbox"> 
+                <div class="gray-buttons window-buttons"> 
+                    <p class="title">Menu</p>
+                </div>
+                <div class="content"> 
+                    <div class="column-container">
+                        <p class="flex-element">
+                            <a href="/"><img class="menu-item" src="/images/png/btn_home.png" alt="Home"></a>
+                        </p>
+                        <p class="flex-element">
+                            <a href="/blog"><img class="menu-item" src="/images/png/btn_blog.png" alt="Blog"></a>
+                        </p>
+                        <p class="flex-element">
+                            <a href="/about"><img class="menu-item" src="/images/png/btn_about.png" alt="About"></a>
+                        </p>
+                        <p class="flex-element">
+                            <a href="/todo"><img class="menu-item" src="/images/png/btn_todo.png" alt="ToDo"></a>
+                        </p>
+                        <p class="flex-element">
+                            Webrings:
+                        </p>
+                        <p class="flex-element" style="text-align: center;">
+                            <script src="https://silly.possiblyaxolotl.com/ring/webstring.js" ></script>
+                        </p>
+                        <p class="flex-element" style="text-align: center;">
+                            <object id="melonland-surf-club" data="https://melonland.net/surf-badge.svg?fill=#383838" type="image/svg+xml" style="width: 100px; height: 100px;"></object>
+                        </p>
+                        <p class="flex-element" style="text-align: center;">
+                            <map name="noaimini14">
+                                <area href="https://baccyflap.com/noai" shape="rect" coords="21,0,47,30" target="_blank" alt="no ai webring" title="no ai webring">
+                                <area href="https://baccyflap.com/noai/?prv&s=sep" target="_top" shape="rect" coords="1,13,19,29" alt="previous" title="previous">
+                                <area href="https://baccyflap.com/noai/?rnd" target="_top" shape="rect" coords="59,7,66,16" alt="random" title="random">
+                                <area href="https://baccyflap.com/noai/?nxt&s=sep" target="_top" shape="rect" coords="68,1,86,17" alt="next" title="next">
+                            </map>
+                            <img usemap="#noaimini14" src="https://baccyflap.com/noai/miniwidget14.gif" alt="a bluegreen rectangle showing the words the NO AI webring, with NO AI being written by a fountain pen, all in the style of 16 bit Windows 95 icons. to either side are two equally Windows-95-style cursors pointing left and right, softly bouncing up and down. in between it all is a small black question mark"> 
+                        </p>
+                        <p class="flex-element" style="text-align: center;">
+                            My Badge:
+                            <br/>
+                            <img src="/images/png/sep_badge.png" alt="SergioEduP.com 88x31 Badge">
+                            <br/>
+                            <input readonly="" value='<a href="https://sergioedup.com/"><img src="https://sergioedup.com/images/png/sep_badge.png" alt="SergioEduP.com 88x31 Badge"></a>'>
+                        </p>
+                    </div>
+                </div>
+            </div> 
         </div>
         <div class="box-2">
-            <iframe class="innerbox main-window" title="Content" id="mainframe" name="content_frame" src="./bluewindow.html?title=Home&page=home.html"></iframe> 
+            <div class="blue-window window-borders innerbox main-window"> 
+                <div class="blue-buttons window-buttons"> 
+                    <p class="title">Home</p>
+                </div>
+                <div class="content"> 
+                    <div class="column-container">
+                        <div class="flex-element">
+                            <img src="/images/png/logo.png" style="margin: 25px; max-width: 250px;" alt="Logo">
+                        </div>
+                        <p class="flex-element">
+                            Hi, I'm Sérgio Pereira, but usually go by SergioEduP or TheSergioEduP online.
+                        </p>
+                        <p class="flex-element">
+                            It would seem like you have stumbled your way to my personal website, well, welcome to the webbiest of sites on the whole of the widest web of this world! Feel free to look at the blog, there is more info (and links) about myself on the about page, and there are a bunch of cool tools that I use and cool websites that inspire me on the links window (I will probably add more as I discover them).
+                        </p>
+                        <p class="flex-element">
+                            As tradition demands this website is an eternal work in progress, and just about everything here is a temporary placeholder.
+                            (Also just as a warning, this website is mainly designed for desktop even though I try to make it work decently on mobile, and it does require javascript enabled to work), and currently it is in its 2nd iteration.
+                        </p>
+                        <p class="flex-element">
+                            Feel free to include my badge on your website, you can self-host it but I would prefer if you linked to it so that it stays updated in case I decide to change it.
+                        </p>
+                        <p class="flex-element" style="text-align: center;">
+                            Badge:
+                            <br/>
+                            <img src="/images/png/sep_badge.png" alt="SergioEduP.com 88x31 Badge">
+                            <br/>
+                            <input readonly="" value='<a href="https://sergioedup.com/"><img src="https://sergioedup.com/images/png/sep_badge.png" alt="SergioEduP.com 88x31 Badge"></a>'>
+                        </p>
+                        <p>You can also find all of the source of this website on <a href="https://github.com/TheSergioEduP/sergioedup">github</a></p>
+                    </div>
+                </div>
+            </div> 
         </div>
-        <div class="box-3">
-            <iframe class="innerbox" title="Footer" name="footer_frame" src="./graywindow.html?title=Cool%20Buttons%20of%20Cool%20Sites&page=footer.html"></iframe> 
+		<div class="box-3">
+            <div class="gray-window window-borders innerbox"> 
+                <div class="gray-buttons window-buttons"> 
+                    <p class="title">Links</p>
+                </div>
+                <div class="content"> 
+                    <div class="container">
+                        <p class="flex-element">
+                            <a href="https://brainmade.org/" target="_top">
+                                <img class="badges" alt="Brain Made"  src="https://brainmade.org/88x31-light.png">
+                            </a>
+                        </p>
+                        <p class="flex-element">
+                            <a href="https://archlinux.org/" target="_top">
+                                <img class="badges" alt="Arch Linux"  src="/images/88x31/archlinux.png">
+                            </a>
+                        </p>
+                        <p class="flex-element">
+                            <a href="https://krita.org/" target="_top">
+                                <img class="badges" alt="Krita"  src="/images/88x31/krita.png">
+                            </a>
+                        </p>
+                        <p class="flex-element">
+                            <a href="https://inkscape.org/" target="_top">
+                                <img class="badges" alt="Inkscape"  src="/images/88x31/inkscape.png">
+                            </a>
+                        </p>
+                        <p class="flex-element">
+                            <a href="https://www.freecad.org/" target="_top">
+                                <img class="badges" alt="FreeCAD"  src="/images/88x31/freecad.png">
+                            </a>
+                        </p>
+                        <p class="flex-element">
+                            <a href="https://github.com/TheSergioEduP/" target="_top">
+                                <img class="badges" alt="Github/TheSergioEduP"  src="/images/88x31/github.png">
+                            </a>
+                        </p>
+                        <p class="flex-element">
+                            <a href="https://www.mozilla.org/firefox/" target="_top">
+                                <img class="badges" alt="Firefox"  src="/images/88x31/firefox.png">
+                            </a>
+                        </p>
+                        <p class="flex-element">
+                            <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_top">
+                                <img class="badges" alt="CC-BY-SA"  src="/images/88x31/ccbysa.png">
+                            </a>
+                        </p>
+                        <p class="flex-element">
+                            <a href="https://rejectconvenience.com/" target="_top">
+                                <img class="badges" alt="Reject Convenience" src="https://rejectconvenience.com/gallery/website%20badge.png?ts=1734052052">
+                            </a>
+                        </p>
+                        <p class="flex-element">
+                            <a href="https://i-eat.rocks/" target="_top">
+                                <img class="badges" alt="I EAT ROCKS" src="https://i-eat.rocks/images/ui/ieatrocks.png">
+                            </a>
+                        </p>
+                        <p class="flex-element">
+                            <a href="https://possiblyaxolotl.com/" target="_top">
+                                <img class="badges" alt="Axolotl of the Possible variety" src="https://possiblyaxolotl.com/images/88x31/88x31.png">
+                            </a>
+                        </p>
+                        <p class="flex-element">
+                            <a href="https://melonking.net/" target="_top">
+                                <img class="badges" alt="Melonking.Net" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF">
+                            </a>
+                        </p>
+                        <p class="flex-element">
+                            <a href="https://forum.melonland.net/" target="_top">
+                                <img class="badges" alt="Melonland Forum" src="https://forum.melonland.net/images/MELONLAND-FORUM.GIF">
+                            </a>
+                        </p>
+                        <p class="flex-element">
+                            <a href="https://melonland.net/" target="_top">
+                                <img class="badges" alt="Melonland" src="https://melonland.net/images/melonland-badge-2.gif">
+                            </a>
+                        </p>
+                        <p class="flex-element">
+                            <a href="https://melankorin.net/" target="_top">
+                                <img class="badges" alt="Melan Korin"  src="https://melankorin.net/assets/img/buttons/button-1.gif">
+                            </a>
+                        </p>
+                        <p class="flex-element">
+                            <a href="https://abslimeware.neocities.org/" target="_top">
+                                <img class="badges" alt="Candycane"  src="https://abslimeware.neocities.org/assets/images/blinkers/site_badge_88x.png">
+                            </a>
+                        </p>
+                        <p class="flex-element">
+                            <a href="https://solbeth.neocities.org/" target="_top">
+                                <img class="badges" alt="Sol"  src="https://solbeth.neocities.org/home%20images/button.gif">
+                            </a>
+                        </p>
+                        <p class="flex-element">
+                            <a href="https://beittel.net/" target="_top">
+                                <img class="badges" alt="Crazyroostereye"  src="https://beittel.net/stuff/Crazy31.gif">
+                            </a>
+                        </p>
+                        <p class="flex-element">
+                            <a href="https://corru.observer/" target="_top">
+                                <img class="badges" alt="corru.observer"  src="https://corru.observer/8831.gif">
+                            </a>
+                        </p>
+                        <p class="flex-element">
+                            More to be added as I discover/make them <br/> ~ the Webmaster
+                        </p>
+                    </div>
+                </div>
+            </div> 
         </div>
 	</div>
     <script type="text/javascript">
         let params = new URLSearchParams(location.search);
         if(params.has('b')){
-            document.getElementById("mainframe").src = "./bluewindow.html?title=Blog&page=blog.html?b=" + params.get('b')
+            let page = params.get('b');
+            let url = new URL(window.location.href);
+            url.searchParams.delete('b');
+            switch(page) {
+            case "1":
+                window.location.replace(url+"/blog/2024/12/26/hello-welcome-and-why");
+                break;
+            case "2":
+                window.location.replace(url+"/blog/2024/12/30/distraction-free-january");
+                break;
+            case "3":
+                window.location.replace(url+"/blog/2025/02/09/un-distractible-but-anxious");
+                break;
+            case "4":
+                window.location.replace(url+"/blog/2025/02/16/list-of-projects");
+                break;
+            case "5":
+                window.location.replace(url+"/blog/2025/02/24/algorithmic-complacency");
+                break;
+            case "6":
+                window.location.replace(url+"/blog/2025/03/04/website-rebuild");
+                break;
+            }
         }
-        let url = new URL(window.location.href);
-        url.searchParams.delete('b');
-        window.history.replaceState({}, '', url.toString());
       </script>
 </body>
 </html>

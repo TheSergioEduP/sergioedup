@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sergio's Mind Palace | .6 - Website rebuild!</title>
+    <link rel="alternate" type="application/rss+xml" title="Sergio's Mind Palace" href="/blog/feed.xml"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="/css/window.css">
+    <link rel="stylesheet" href="/css/single-layout.css">
+    <meta name="fediverse:creator" content="@SergioEduP@mastodon.online">
+    <style>
+        body {
+            image-rendering: pixelated;
+            min-height: 100%;
+            margin: 0;
+            padding: 0;
+            background-image: url("/images/png/bg.png");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+	<div class="main-container">
+        <div class="box-2">
+            <div class="blue-window window-borders innerbox main-window"> 
+                <div class="blue-buttons window-buttons"> 
+                    <p class="title">.6 - Website rebuild!</p>
+                </div>
+                <div class="content"> 
+                    <p>
+                        <a href="/blog">Back to Index</a>
+                        <hr/>
+                    </p>
+                    <article>
+                        <h1>.6 - Website rebuild!</h1>
+                        <h2>2025-03-04</h2>
+
+                        <p>When I started working on this website in December 2024 I decided to recycle some code, all of the windows you see on this page I designed a while back when I was trying to stream on Twitch as stream overlays, and because I wanted to quickly be able to change the titles and sizes of them I made them into HTML files that I could load within OBS, resize and pass the title within the link. And for that it worked great, but when it comes to using them within a website I needed to make use of iframes, which also work decently well but bring some issues and limitations of their own.</p>
+    
+                        <p>Iframes are not aware of the content, which means I have to set their size manually, so to have them work on different size screens it's very annoying, they also make linking to specific pages an absolute pain (I had to write a script on my index to link to individual blog posts, this website just does not work without javascript), and lastly it is just very messy to work with (this page alone contains 7 iframes).</p>
+
+                        <p>So that got me thinking "There has got to be a better way to add images as borders to elements in HTML/CSS", and lo an behold CSS's <code>border-image</code> properties do exactly what I was looking for! The windows you see below are composed of 3 <code>div</code> tags with CSS styling:</p>
+
+                        <div class="gray-window window-borders innerbox"> 
+                            <div class="gray-buttons window-buttons"> 
+                                <p class="title">Gray Window Test</p>
+                            </div>
+                            <div class="content"> 
+                                <p>[Content Goes Here]</p>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="blue-window window-borders innerbox"> 
+                            <div class="blue-buttons window-buttons"> 
+                                <p class="title">Blue Window Test</p>
+                            </div>
+                            <div class="content"> 
+                                <p>[Content Goes Here]</p>
+                            </div>
+                        </div>
+
+                        <p>And here is what the code looks like for one of them:</p>
+
+                        <pre><code>
+&lt;div class="gray-window window-borders innerbox"> 
+    &lt;div class="gray-buttons window-buttons"> 
+        &lt;p class="title">Gray Window Test&lt;/p>
+    &lt;/div>
+    &lt;div class="content"> 
+        &lt;p>[Content Goes Here]&lt;/p>
+    &lt;/div>
+&lt;/div>
+                        </code></pre>
+
+                        <p>Even if this means that I'll need to create a few more "full" pages I plan to rebuild this website to use these new windows, as they bring with them a lot more flexibility (and also reduce the javascript use) and opportunities to create cool looking pages instead of fitting everything withing the same few frames.</p>
+
+                        <p>But that also means that I'll have to rethink the structure of this website a bit, and more specifically of this blog, up until this point I have been leaning pretty heavily on the use of iframes for the construction of this blog, and I'm honestly not quite sure how but I'll probably still use a frame or two to avoid copying the menu to every single page.</p>
+
+                        <p>I'll also have to take extra care to not break the current links to posts but that shouldn't be to hard to figure out.</p>
+
+                        <h3>What else has happened this week</h3>
+
+                        <p>While this week wasn't terribly productive on the project front (Only did the monitor mount for my sim-rig but that was so boring that I din't even take a picture of it) I did a couple of things, first off I got back on Mastodon, a few years back I had crated an account on mastodon.online that I barely used and now decided to give it another shot, and that made me want to host my own instance so I can be more comfortable with sharing my thoughts and pictures knowing that they would be hosted in a place that I control the storage and also would not be hogging up disk space that graciously shared by other communities, that then sent me down a rabbit hole researching servers and hosting services, and although I have not decided yet it is very likely that I will rent a server and move most of my stuff there sometime soon, meaning that this website might stop working for a day or two if I do get a server.</p>
+
+                        <p>I have also discovered that FNAC here in Portugal (at least the one I went to) still has a pretty big selection of physical music discs, both Compact Discs and Vinyl Discs, and by pure luck they had a lot of my favorites stocked so needless to say that I bought a quite few discs and spent yesterday afternoon RIPing them all. There is something special about physical media that a purely digital copy does not capture, and even though digital copies are very convenient and practical I can't help but smile when I'm messing around with physical discs, tapes and even cartridges, so I decided to add to my to do list something, I want to make a digital museum of sorts here on my website for the sole reason that I would have to grab every single one of the things that I want to share there and take a few pictures from different angles (maybe even from the insides) and that also seems like a pretty fun project, I also want to share all of those images under a CC-BY-SA license so they might be useful for someone else's projects.</p>
+
+                        <p>This week's post was a bit late and I'm not sure that I will have anything for next week since it is just a few days away, so I'll probably skip it and wok on the re-write of the website</p>
+
+                    </article>
+                </div>
+            </div> 
+        </div>
+	</div>
+</body>
+</html>
