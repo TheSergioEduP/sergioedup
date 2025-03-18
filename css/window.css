@@ -16,22 +16,23 @@
 }
 .window-borders{
     border-image-slice: 38 38 38 38 fill;
-    border-image-width: 38px 38px 38px 38px;
-    border-image-outset: 0px 0px 0px 0px;
+    border-image-width: 2.375rem 2.375rem 2.375rem 2.375rem;
+    border-image-outset: 0.5rem;
     border-image-repeat: stretch stretch; 
     border-style: solid; 
     image-rendering: pixelated;
-    padding: 2px 5px 2px 5px;
-    min-height: 150px
+    min-height: 10rem;
+    border-width: 0;
 }
 .window-buttons{
-    border-image-slice: 0 59 0 30 fill;
-    border-image-width: 0px 59px 0px 30px;
-    border-image-outset: 0px 0px 0px 0px;
+    border-image-slice: 0 60 0 30 fill;
+    border-image-width: 0 3.75rem 0 1.875rem;
+    border-image-outset: 0;
     border-image-repeat: stretch space;
-    border-style: solid; 
+    border-style: solid;
+    border-width: 0;
     image-rendering: pixelated;
-    height: 30px;
+    height: 1.889rem;
     text-align: center;
     position: relative;
 }
@@ -40,8 +41,8 @@
     font-weight: 400;
     font-style: normal;
     left: 50%;
-    transform: translateX(-50%) translateY(-14px);
-    max-width: calc(100% - 150px);
+    transform: translateX(-50%) translateY(-.6rem);
+    max-width: calc(100% - 7rem);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -50,7 +51,8 @@
     user-select: none;
 }
 .content{
-    padding: 0px 10px;
-    height: calc(100% - 30px);
+    padding: 1rem;
+    height: calc(100% - 2rem);
     overflow: auto;
+    scrollbar-width: thin;
 }

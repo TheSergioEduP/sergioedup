@@ -4,7 +4,6 @@
 
 .main-container {
     display: flex;
-    margin: 0px;
     flex-wrap: wrap;
     height: 100vh;
     align-items: stretch;
@@ -12,7 +11,6 @@
 
 .container {
     display: flex;
-    margin: 0px;
     flex-flow: row;
     flex-wrap: wrap;
     width: auto;
@@ -20,7 +18,6 @@
 
 .column-container {
     display: flex;
-    margin: 0px;
     flex-flow: column;
     flex-wrap: wrap;
     align-items: center;
@@ -40,76 +37,68 @@
 }
 
 .flex-element {
-    padding: 5px;
-    margin: 0px;
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: auto;
+    text-align: center;
 }
 
 .innerbox{
-    min-height: 150px;
     width: 100%;
     height: 100%;
-    padding: 5px;
 }
 
 .box-1 {
-    padding: 20px;
+    padding: 3rem;
     order: 1;
     height: 100vh;
-    flex-basis: 300px;
+    flex-basis: 18.75rem;
 }
 
 .box-2 {
-    padding: 10px;
+    padding: 2rem;
     order: 2;
-    width: auto;
     margin: auto;
     display: block;
-    min-width: 500px;
-    max-width: 900px;
+    min-width: 10rem;
+    flex-basis: 56.25rem;
+    max-width: 56.25rem;
     height: 100vh;
-    flex-grow: 1;
-    flex-shrink: 1;
+    flex: 2;
 }
 
 .box-3 {
-    padding: 20px;
+    padding: 3rem;
     order: 3;
     height: 100vh;
-    flex-grow: 1;
-    max-width: 300px;
+    flex-basis: 21.875rem;
 }
 @media only screen and (max-width: 1555px) and (min-width: 800px) {
     .box-1 {
-        padding: 20px;
+        padding: 3rem;
         order: 1;
-        height: calc(100vh - 250px);
-        flex-basis: 300px;
+        height: calc(100vh - 15.625rem);
+        flex-basis: 18.75rem;
     }
     .box-2 {
-        padding: 10px;
+        padding: 2rem;
         order: 2;
-        min-width: 300px;
-        flex-basis: calc(100% - 350px);
-        height: calc(100vh - 250px);
-        flex-grow: 1;
-        flex-shrink: 1;
+        min-width: 10rem;
+        flex-basis: calc(100% - 21.875rem);
+        height: calc(100vh - 15.625rem);
+        flex: 2;
     }
     .box-3 {
-        padding: 20px;
+        padding: 3rem;
         order: 3;
-        height: 250px;
+        height: 15.625rem;
         flex-grow: 1;
         flex-basis: 100%;
         max-width: 100%;
     }
     .innerbox{
-        min-height: 150px;
         width: 100%;
         height: 100%;
-        padding: 5px;
     }
 }
 @media only screen and (max-width: 799px),
@@ -118,17 +107,20 @@
         height: auto;
     }
     .box-1 {
+        padding: 1.5rem;
         order: 1;
         flex-basis: 100%;
         height: auto;
     }
     .box-2 {
+        padding: 1rem;
         order: 2;
         flex-basis: 100%;
         height: auto;
-        min-width: 250px;
+        min-width: 10rem;
     }
     .box-3 {
+        padding: 1.5rem;
         order: 3;
         flex-basis: 100%;
         height: auto;
@@ -136,9 +128,7 @@
         max-width: 100%;
     }
     .innerbox{
-        min-height: 150px;
         width: 100%;
         height: 100%;
-        padding: 5px;
     }
 }
