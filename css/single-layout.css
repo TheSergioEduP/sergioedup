@@ -5,7 +5,7 @@
 .main-container {
     display: flex;
     flex-wrap: wrap;
-    height: 100vh;
+    /*height: 100vh;*/
     align-items: stretch;
 }
 
@@ -44,7 +44,7 @@
     display: block;
     min-width: 31.25rem;
     max-width: 56.25rem;
-    height: 100vh;
+    /*height: 100vh;*/
     flex-grow: 1;
     flex-shrink: 1;
 }
@@ -55,7 +55,7 @@
         order: 2;
         min-width: 18.75rem;
         flex-basis: calc(100% - 21.875rem);
-        height: 100vh;
+        /*height: 100vh;*/
         flex-grow: 1;
         flex-shrink: 1;
     }
