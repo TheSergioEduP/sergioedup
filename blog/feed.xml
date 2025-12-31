@@ -6,11 +6,18 @@
   <link>https://www.sergioedup.com/?b</link>
   <atom:link href="https://www.sergioedup.com/blog/feed.xml" rel="self" type="application/rss+xml" />
   <description>A web blog where I share my thoughts, ideas and projects</description>
+    <item>
+    <title>.9 - Another Year, Another Challenge</title>
+    <link>https://www.sergioedup.com/blog/2025/12/30/another-year-another-challenge/</link>
+    <guid>https://www.sergioedup.com/blog/2025/12/30/another-year-another-challenge/</guid>
+    <description>Distraction Free January 2026!</description>
+    <pubDate>Tue, 30 Dec 2025 21:00:00 GMT</pubDate>
+  </item>
   <item>
     <title>.8 - So that was a lie....</title>
     <link>https://www.sergioedup.com/blog/2025/07/10/so-that-was-a-lie/</link>
     <guid>https://www.sergioedup.com/blog/2025/07/10/so-that-was-a-lie/</guid>
-    <description>Slowing down and redefining my priorities</description>
+    <description>A lot has been going on</description>
     <pubDate>Thu, 10 Jul 2025 21:00:00 GMT</pubDate>
   </item>
   <item>
