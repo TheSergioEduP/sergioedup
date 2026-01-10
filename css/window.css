@@ -40,6 +40,7 @@
     font-family: "Press Start 2P", system-ui;
     font-weight: 400;
     font-style: normal;
+    font-size: 100%;
     left: 50%;
     transform: translateX(-50%) translateY(-.6rem);
     max-width: calc(100% - 7rem);
@@ -49,10 +50,22 @@
     position: absolute;
     display: block;
     user-select: none;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 .content{
     padding: 1rem;
     height: calc(100% - 2rem);
     overflow: auto;
     scrollbar-width: thin;
+}
+time.published {
+  display: block;
+  font-size: 1.5em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+  font-style: italic;
 }
